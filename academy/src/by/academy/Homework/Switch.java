@@ -7,9 +7,9 @@ public class Switch {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Введите тип данных");
+		System.out.println("Р’РІРµРґРёС‚Рµ С‚РёРї РїРµСЂРµРјРµРЅРЅРѕР№");
 		String tipe = sc.nextLine();
-		System.out.println("Введите переменную");
+		System.out.println("Р’РІРµРґРёС‚Рµ РїРµСЂРµРјРµРЅРЅСѓСЋ");
 		switch (tipe) {
 		case "int":
 			System.out.println(sc.nextInt() % 2);

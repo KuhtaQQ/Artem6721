@@ -7,16 +7,16 @@ public class Classwork {
 		int a = 1;
 		int b = 4;
 		if (a<b) {
-			System.out.println(b+" больше");
+			System.out.println(b+" Р±РѕР»СЊС€Рµ");
 		}
 		else {
-			System.out.println(a+" больше");
+			System.out.println(a+" Р±РѕР»СЊС€Рµ");
 		}
 		if (a>b) {
-			System.out.println(b+" меньше");
+			System.out.println(b+" РјРµРЅСЊС€Рµ");
 		}
 		else {
-			System.out.println(a+" меньше");
+			System.out.println(a+" РјРµРЅСЊС€Рµ");
 		}
 		System.out.println((a+b)/2);
 		
