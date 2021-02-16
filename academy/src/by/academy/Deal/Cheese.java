@@ -1,10 +1,10 @@
 package by.academy.Deal;
 
 public class Cheese extends Product {
-	private Double massa;
+	private Integer massa;
 	private String made;
 
-	public Cheese(Double price, String name, String manufacture, Integer quantity,Double massa,String made) {
+	public Cheese(Double price, String name, String manufacture, Integer quantity,Integer massa,String made) {
 		super(name, price,manufacture ,quantity);
 		this.massa = massa;
 		this.made = made;
@@ -25,11 +25,11 @@ public class Cheese extends Product {
 		super();
 	}
 
-	public Double getMassa() {
+	public Integer getMassa() {
 		return massa;
 	}
 
-	public void setMassa(Double massa) {
+	public void setMassa(Integer massa) {
 		this.massa = massa;
 	}
 

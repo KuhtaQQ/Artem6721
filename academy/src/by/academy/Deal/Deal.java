@@ -186,10 +186,10 @@ public class Deal implements Interface {
 			}
 			case "2": {
 				System.out.println("Введите критерии продукта: ");
-				Cheese cheese = new Cheese();
+				Cheese cheese = new Cheese(); 
 				readProduct(cheese);
 				System.out.println("Введите массу");
-				cheese.setMassa(sc.nextDouble());
+				cheese.setMassa(sc.nextInt());
 				System.out.println("Введите марку:");
 				cheese.setMade(sc.nextLine());
 				sc.nextLine();
