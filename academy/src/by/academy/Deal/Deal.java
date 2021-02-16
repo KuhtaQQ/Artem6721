@@ -22,20 +22,20 @@ public class Deal implements Interface {
 	private static final LocalDate deadLine = LocalDate.now().plusDays(10);
 
 	public static final String MENU_DEAL = """
-            Меню сделки:
-            Введите:
-            1.Добавить продукт
-            2.Удалить продукт 
-            3.Вывести информацию
-            4.Провести сделку
-            0.Выход""";
-    public static final String MENU_PRODUCT = """
-            Меню продуктов:
-            Введите:
-            1.Добавить винишко
-            2.Добавить кефир
-            3.Добавить сыр
-            0.Выход""";
+			Меню сделки:
+			Введите:
+			1.Добавить продукт
+			2.Удалить продукт
+			3.Вывести информацию
+			4.Провести сделку
+			0.Выход""";
+	public static final String MENU_PRODUCT = """
+			Меню продуктов:
+			Введите:
+			1.Добавить винишко
+			2.Добавить сыр
+			3.Добавить кефир
+			0.Выход""";
 
 	public Deal() {
 		super();
@@ -221,20 +221,21 @@ public class Deal implements Interface {
 			value = sc.nextLine();
 		}
 	}
+
 	private void readProduct(Product product) {
-        System.out.println("Введите наименование продукта");
-        product.setName(sc.nextLine());
+		System.out.println("Введите наименование продукта");
+		product.setName(sc.nextLine());
 
-        System.out.println("Введите цену");
-        product.setPrice(sc.nextDouble());
+		System.out.println("Введите цену");
+		product.setPrice(sc.nextDouble());
 
-        sc.nextLine();
-        System.out.println("Введите страну производства");
-        product.setManufacture(sc.nextLine());
+		sc.nextLine();
+		System.out.println("Введите страну производства");
+		product.setManufacture(sc.nextLine());
 
-        System.out.println("Введите количество");
-        product.setQuantity(sc.nextInt());
-    }
+		System.out.println("Введите количество");
+		product.setQuantity(sc.nextInt());
+	}
 
 	public Person getSeller() {
 		return seller;
@@ -267,26 +268,28 @@ public class Deal implements Interface {
 	public void setDealDate(String dealDate) {
 		this.dealDate = dealDate;
 	}
+
 	public LocalDate getDeadlineDate() {
-        return deadLine;
-    }
+		return deadLine;
+	}
 
-    public double getDeal() {
-        return deal;
-    }
+	public double getDeal() {
+		return deal;
+	}
 
-    public void setPriceBill(Double deal) {
-        this.deal = deal;
-    }
+	public void setPriceBill(Double deal) {
+		this.deal = deal;
+	}
+
 	public String toString() {
-        final StringBuilder sb = new StringBuilder("Сделка{");
-        sb.append("продавец - ").append(seller);
-        sb.append(", покупатель - ").append(buyer);
-        sb.append(", продукты - ").append(Arrays.toString(products));
-        sb.append(", сумма сделки - ").append(deal);
-        sb.append(", дата сделки - ").append(dealDate);
-        sb.append(", дедлайн сделки - ").append(deadLine);
-        sb.append('}');
-        return sb.toString();
-    }
+		final StringBuilder sb = new StringBuilder("Сделка{");
+		sb.append("продавец - ").append(seller);
+		sb.append(", покупатель - ").append(buyer);
+		sb.append(", продукты - ").append(Arrays.toString(products));
+		sb.append(", сумма сделки - ").append(deal);
+		sb.append(", дата сделки - ").append(dealDate);
+		sb.append(", дедлайн сделки - ").append(deadLine);
+		sb.append('}');
+		return sb.toString();
+	}
 }
